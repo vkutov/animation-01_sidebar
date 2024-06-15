@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: (238, 238, 238)
+}
+
+nav {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 2rem;
+    position: relative;
+    left: -600px;
+}
+
+nav.slide {
+    left: 0;
+    transition-duration: 5s;
+}
+
+.slide {
+    background-color: #242323;
+}
+
+nav>a {
+    position: relative;
+    background-color: #242323;
+    left: -600px;
+}
+
+body>nav.slide>a:nth-child(1) {
+    transition-delay: 5s;
+    transition-duration: 4s;
+    left: 0;
+}
+
+body>nav.slide>a:nth-child(2) {
+
+    transition-delay: 4s;
+    transition-duration: 4s;
+    left: 0;
+}
+
+body>nav.slide>a:nth-child(3) {
+    transition-delay: 2s;
+    transition-duration: 4s;
+    left: 0;
+}
+
+body>nav.slide>a:nth-child(4) {
+    transition-delay: 1s;
+    transition-duration: 4s;
+    left: 0;
+}
+
+aside {
+    padding: 1vw;
+    font-weight: 5rem;
+}
+
+.toggle {
+    width: 5rem;
+    height: 5rem;
+    margin: 1.5rem;
+    background-color: rgb(223, 83, 82);
+    border-radius: 100%;
+    position: absolute;
+    top: 4vh;
+    left: 2vw;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: rgb(239, 235, 235);
+}
+
+h1 {
+    font-size: 5rem;
+    left: 50%;
+    top: 50%;
+}
+
+h2 {
+    top: 60%;
+    left: 48%;
+    font-weight: 3rem;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+h1,
+h2 {
+    position: fixed;
+}
